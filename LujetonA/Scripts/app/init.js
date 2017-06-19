@@ -1,0 +1,1 @@
+﻿var app = angular.module("lujeton_app", ['ngRoute']);

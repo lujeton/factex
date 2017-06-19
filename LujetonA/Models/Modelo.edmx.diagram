@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c7f4d58950f84f118ae8086471519e47" Name="Diagram1">
+        <EntityTypeShape EntityType="bd_proyectoModel.bodega" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.cartera" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.categoria" Width="1.5" PointX="1.5" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.cliente" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.datos_empresa" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.detalle_factura" Width="1.5" PointX="10" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.empleado" Width="1.5" PointX="8.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.entrada" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.factura" Width="1.5" PointX="7.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.menu" Width="1.5" PointX="3.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.menu_perfil" Width="1.5" PointX="6" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.movimiento" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.perfil" Width="1.5" PointX="3.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.producto" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.producto_bodega" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.proveedor" Width="1.5" PointX="0.75" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.tipomovimiento" Width="1.5" PointX="0.75" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.usuario" Width="1.5" PointX="6" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_proyectoModel.v_producto_real_stock" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="bd_proyectoModel.fk_mov_bodega" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_proyectoModel.fk_pb_bodega" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_proyectoModel.fk_idfactura" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_proyectoModel.fk_categoria" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_proyectoModel.fk_df_factura" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_proyectoModel.fk_menu" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_proyectoModel.fk_perfil" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_proyectoModel.fk_mov_prod" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_proyectoModel.fk_mov_prov" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_proyectoModel.fk_mov_tmov" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_proyectoModel.fk_pb_movimiento" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_proyectoModel.fk_usuario_perfil" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_proyectoModel.fk_pb_producto" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

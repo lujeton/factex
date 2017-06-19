@@ -1,0 +1,82 @@
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\LujetonA.dll.config
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\LujetonA.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\LujetonA.pdb
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\Antlr3.Runtime.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\EntityFramework.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\EntityFramework.SqlServer.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\MySql.Data.Entity.EF6.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\Newtonsoft.Json.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Net.Http.Formatting.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.Cors.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.Helpers.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.Http.Cors.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.Http.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.Http.WebHost.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.Mvc.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.Optimization.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.Razor.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.WebPages.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.WebPages.Razor.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\WebGrease.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\MySql.Data.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\EntityFramework.xml
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\EntityFramework.SqlServer.xml
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.Http.Cors.xml
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\Newtonsoft.Json.xml
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Net.Http.Formatting.xml
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.Helpers.xml
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.Http.xml
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.Http.WebHost.xml
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.Mvc.xml
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.Optimization.xml
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.Razor.xml
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.WebPages.xml
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\System.Web.WebPages.Razor.xml
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\Antlr3.Runtime.pdb
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\bin\MySql.Data.xml
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\obj\Debug\LujetonA.dll
+C:\Users\Luis Serge\Documents\Visual Studio 2015\Projects\Lujeton\LujetonA\obj\Debug\LujetonA.pdb
+D:\Repositorios\factex\LujetonA\bin\LujetonA.dll.config
+D:\Repositorios\factex\LujetonA\bin\LujetonA.dll
+D:\Repositorios\factex\LujetonA\bin\LujetonA.pdb
+D:\Repositorios\factex\LujetonA\bin\Antlr3.Runtime.dll
+D:\Repositorios\factex\LujetonA\bin\EntityFramework.dll
+D:\Repositorios\factex\LujetonA\bin\EntityFramework.SqlServer.dll
+D:\Repositorios\factex\LujetonA\bin\Microsoft.Web.Infrastructure.dll
+D:\Repositorios\factex\LujetonA\bin\MySql.Data.Entity.EF6.dll
+D:\Repositorios\factex\LujetonA\bin\Newtonsoft.Json.dll
+D:\Repositorios\factex\LujetonA\bin\System.Net.Http.Formatting.dll
+D:\Repositorios\factex\LujetonA\bin\System.Web.Cors.dll
+D:\Repositorios\factex\LujetonA\bin\System.Web.Helpers.dll
+D:\Repositorios\factex\LujetonA\bin\System.Web.Http.Cors.dll
+D:\Repositorios\factex\LujetonA\bin\System.Web.Http.dll
+D:\Repositorios\factex\LujetonA\bin\System.Web.Http.WebHost.dll
+D:\Repositorios\factex\LujetonA\bin\System.Web.Mvc.dll
+D:\Repositorios\factex\LujetonA\bin\System.Web.Optimization.dll
+D:\Repositorios\factex\LujetonA\bin\System.Web.Razor.dll
+D:\Repositorios\factex\LujetonA\bin\System.Web.WebPages.Deployment.dll
+D:\Repositorios\factex\LujetonA\bin\System.Web.WebPages.dll
+D:\Repositorios\factex\LujetonA\bin\System.Web.WebPages.Razor.dll
+D:\Repositorios\factex\LujetonA\bin\WebGrease.dll
+D:\Repositorios\factex\LujetonA\bin\MySql.Data.dll
+D:\Repositorios\factex\LujetonA\bin\Antlr3.Runtime.pdb
+D:\Repositorios\factex\LujetonA\bin\EntityFramework.xml
+D:\Repositorios\factex\LujetonA\bin\EntityFramework.SqlServer.xml
+D:\Repositorios\factex\LujetonA\bin\Newtonsoft.Json.xml
+D:\Repositorios\factex\LujetonA\bin\System.Web.Http.Cors.xml
+D:\Repositorios\factex\LujetonA\bin\System.Net.Http.Formatting.xml
+D:\Repositorios\factex\LujetonA\bin\System.Web.Helpers.xml
+D:\Repositorios\factex\LujetonA\bin\System.Web.Http.xml
+D:\Repositorios\factex\LujetonA\bin\System.Web.Http.WebHost.xml
+D:\Repositorios\factex\LujetonA\bin\System.Web.Mvc.xml
+D:\Repositorios\factex\LujetonA\bin\System.Web.Optimization.xml
+D:\Repositorios\factex\LujetonA\bin\System.Web.Razor.xml
+D:\Repositorios\factex\LujetonA\bin\System.Web.WebPages.xml
+D:\Repositorios\factex\LujetonA\bin\System.Web.WebPages.Deployment.xml
+D:\Repositorios\factex\LujetonA\bin\System.Web.WebPages.Razor.xml
+D:\Repositorios\factex\LujetonA\bin\MySql.Data.xml
+D:\Repositorios\factex\LujetonA\obj\Debug\LujetonA.dll
+D:\Repositorios\factex\LujetonA\obj\Debug\LujetonA.pdb

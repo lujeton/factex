@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bd_proyectoModelStoreContainer" CdmEntityContainer="bd_proyectoEntities1">
+    <EntitySetMapping Name="bodega">
+      <EntityTypeMapping TypeName="bd_proyectoModel.bodega">
+        <MappingFragment StoreEntitySet="bodega">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cartera">
+      <EntityTypeMapping TypeName="bd_proyectoModel.cartera">
+        <MappingFragment StoreEntitySet="cartera">
+          <ScalarProperty Name="idcartera" ColumnName="idcartera" />
+          <ScalarProperty Name="abono" ColumnName="abono" />
+          <ScalarProperty Name="idfactura" ColumnName="idfactura" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="categoria">
+      <EntityTypeMapping TypeName="bd_proyectoModel.categoria">
+        <MappingFragment StoreEntitySet="categoria">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cliente">
+      <EntityTypeMapping TypeName="bd_proyectoModel.cliente">
+        <MappingFragment StoreEntitySet="cliente">
+          <ScalarProperty Name="idcliente" ColumnName="idcliente" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="ciudad" ColumnName="ciudad" />
+          <ScalarProperty Name="celular" ColumnName="celular" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="datos_empresa">
+      <EntityTypeMapping TypeName="bd_proyectoModel.datos_empresa">
+        <MappingFragment StoreEntitySet="datos_empresa">
+          <ScalarProperty Name="nit" ColumnName="nit" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="representante" ColumnName="representante" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="detalle_factura">
+      <EntityTypeMapping TypeName="bd_proyectoModel.detalle_factura">
+        <MappingFragment StoreEntitySet="detalle_factura">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idFactura" ColumnName="idFactura" />
+          <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="empleado">
+      <EntityTypeMapping TypeName="bd_proyectoModel.empleado">
+        <MappingFragment StoreEntitySet="empleado">
+          <ScalarProperty Name="id_empleado" ColumnName="id_empleado" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="ciudad" ColumnName="ciudad" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="entrada">
+      <EntityTypeMapping TypeName="bd_proyectoModel.entrada">
+        <MappingFragment StoreEntitySet="entrada">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="factura">
+      <EntityTypeMapping TypeName="bd_proyectoModel.factura">
+        <MappingFragment StoreEntitySet="factura">
+          <ScalarProperty Name="descuento" ColumnName="descuento" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="sub_total" ColumnName="sub_total" />
+          <ScalarProperty Name="impuesto" ColumnName="impuesto" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="menu">
+      <EntityTypeMapping TypeName="bd_proyectoModel.menu">
+        <MappingFragment StoreEntitySet="menu">
+          <ScalarProperty Name="idmenu" ColumnName="idmenu" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="menu_perfil">
+      <EntityTypeMapping TypeName="bd_proyectoModel.menu_perfil">
+        <MappingFragment StoreEntitySet="menu_perfil">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_perfil" ColumnName="id_perfil" />
+          <ScalarProperty Name="id_menu" ColumnName="id_menu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="movimiento">
+      <EntityTypeMapping TypeName="bd_proyectoModel.movimiento">
+        <MappingFragment StoreEntitySet="movimiento">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="idBodega" ColumnName="idBodega" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="idTMovimiento" ColumnName="idTMovimiento" />
+          <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="perfil">
+      <EntityTypeMapping TypeName="bd_proyectoModel.perfil">
+        <MappingFragment StoreEntitySet="perfil">
+          <ScalarProperty Name="idperfil" ColumnName="idperfil" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="producto">
+      <EntityTypeMapping TypeName="bd_proyectoModel.producto">
+        <MappingFragment StoreEntitySet="producto">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="precio_unidad" ColumnName="precio_unidad" />
+          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+          <ScalarProperty Name="imagen" ColumnName="imagen" />
+          <ScalarProperty Name="precio_venta" ColumnName="precio_venta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="producto_bodega">
+      <EntityTypeMapping TypeName="bd_proyectoModel.producto_bodega">
+        <MappingFragment StoreEntitySet="producto_bodega">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+          <ScalarProperty Name="idBodega" ColumnName="idBodega" />
+          <ScalarProperty Name="idMovimiento" ColumnName="idMovimiento" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="proveedor">
+      <EntityTypeMapping TypeName="bd_proyectoModel.proveedor">
+        <MappingFragment StoreEntitySet="proveedor">
+          <ScalarProperty Name="nit" ColumnName="nit" />
+          <ScalarProperty Name="razon_social" ColumnName="razon_social" />
+          <ScalarProperty Name="representante" ColumnName="representante" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="ciudad" ColumnName="ciudad" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipomovimiento">
+      <EntityTypeMapping TypeName="bd_proyectoModel.tipomovimiento">
+        <MappingFragment StoreEntitySet="tipomovimiento">
+          <ScalarProperty Name="idTMovimiento" ColumnName="idTMovimiento" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="bd_proyectoModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+          <ScalarProperty Name="user" ColumnName="user" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="idperfil" ColumnName="idperfil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_producto_real_stock">
+      <EntityTypeMapping TypeName="bd_proyectoModel.v_producto_real_stock">
+        <MappingFragment StoreEntitySet="v_producto_real_stock">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="stock_total" ColumnName="stock_total" />
+          <ScalarProperty Name="precio_unidad" ColumnName="precio_unidad" />
+          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+          <ScalarProperty Name="imagen" ColumnName="imagen" />
+          <ScalarProperty Name="precio_venta" ColumnName="precio_venta" />
+          <ScalarProperty Name="categoria_nombre" ColumnName="categoria_nombre" />
+          <ScalarProperty Name="existencia" ColumnName="existencia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

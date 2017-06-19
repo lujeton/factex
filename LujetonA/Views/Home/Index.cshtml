@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html ng-app="lujeton_app">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Pages - Admin Dashboard UI Kit - Lock Screen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <link class="main-stylesheet" href="../pages/css/pages.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <!-- importar en todas las vistas -->
+    <script src="~/Scripts/app/init.js"></script>
+    <!-- importar providers -->
+    <script src="~/Scripts/app/provider/usuario_provider.js"></script>
+    <!-- importar controllers -->
+    <script src="~/Scripts/app/controller/login_ctrl.js"></script>
+
+</head>
+<body class="fixed-header" ng-controller="login_ctrl">
+    <div class="login-wrapper ">
+        <!-- START Login Background Pic Wrapper-->
+        <div class="bg-pic">
+            <!-- START Background Pic-->
+            <img src="../Asset/img/ferreterias.png" data-src="Asset/img/ferreterias.png" data-src-retina="assets/img/ferreterias.png" alt="" class="lazy">
+            <!-- END Background Pic-->
+            <!-- START Background Caption-->
+            <div class="bg-caption pull-bottom sm-pull-bottom text-white p-l-20 m-b-20">
+                <h2 class="semi-bold text-white">
+                    Lujetón
+                </h2>
+            </div>
+            <!-- END Background Caption-->
+        </div>
+        <!-- END Login Background Pic Wrapper-->
+        <!-- START Login Right Container-->
+        <div class="login-container bg-white">
+            <div class="p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
+                <img src="~/Asset/img/logo.png" alt="logo" data-src="Asset/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
+                <p class="p-t-35"><h1>Bienvenido <h1></p>
+                <!-- START Login Form -->
+                <form id="form-login" class="p-t-15" role="form">
+                    <!-- START Form Control-->
+                    <div class="form-group form-group-default">
+                        <label>Login</label>
+                        <div class="controls">
+                            <input type="text" ng-model="usuario.user" name="username" placeholder="User Name" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-default">
+                        <label>Password</label>
+                        <div class="controls">
+                            <input type="password" ng-model="usuario.pass" class="form-control" name="password" placeholder="Credentials" required>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-cons m-t-10" ng-click="evt_iniciar_sesion()">Sign in</button>
+                </form>
+                <!--END Login Form-->
+
+            </div>
+            <!-- START OVERLAY -->
+        </div>
+        <!-- END Overlay Content !-->
+    </div>
+    <!-- END OVERLAY -->
+    <!-- BEGIN VENDOR JS -->
+
+    <script type="text/javascript" src="../assets/plugins/bootstrap-select2/select2.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/classie/classie.js"></script>
+    <script src="../assets/plugins/switchery/jsu/switchery.min.js" type="text/javascript"></script>
+    <script src="../assets/plugins/jquery-validation/jse/jquery.validate.min.js" type="text/javascript"></script>
+
+</body>
+</html>
