@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h3 class="page-title" > DATOS EMPRESA </h3>
+        <br>
+
+        <div class="form-group">
+
+            <div class="col-md-6">
+                
+
+            </div>
+        </div>
+
+
+        <br>
+        
+        
+        <div style="border:white;"  class="portlet box purple">
+                                <div style="background: #747F8C;" class="portlet-title">
+                                    <div style="color:black;" class="caption">
+                                        <i class="fa fa-cogs"></i> EMPRESA </div>
+                                    <div class="tools">
+                                        <a href="javascript:;" class="collapse"> </a>
+                                        <a href="javascript:;" class="reload"> </a>
+                                        
+                                    </div>
+                                </div>
+        
+        <div class="portlet-body">
+        <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover dt-responsive" width="100%" id="sample_1">
+            <thead>
+                <tr>
+                    <th class="desktop">NIT</th>
+                    <th class="desktop">NOMBRE</th>
+                    <th class="min-phone-l">REPRESENTANTE</th>
+                    <th class="none">TELEFONO</th>
+                    <th class="min-tablet">EMAIL</th>                    
+                    <th class="none">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="d in empresas" >
+                    <td>{{ d.nit}}</td>
+                    <td>{{ d.nombre}}</td>
+                    <td>{{ d.representante}}</td>
+                    <td>{{ d.telefono}}</td>
+                    <td>{{ d.email}}</td>
+                    <td><a href="javascript:;" class="btn btn-circle btn-sm red"> Actualizar <i class="fa fa-edit"> </i></a> </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+      </div>
+   </div>       
+    </body>
+</html>

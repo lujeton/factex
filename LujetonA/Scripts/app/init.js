@@ -1,1 +1,1 @@
-﻿var app = angular.module("lujeton_app", ['ngRoute']);
+﻿var app = angular.module("lujeton_app",[]);

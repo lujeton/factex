@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h3 class="page-title-center" > INVENTARIO </h3>
+        <br>
+
+        
+
+        <br>
+        <br>
+        <br>
+        
+        <div>
+            <div id="content_printable" style="display: none;">
+              
+                <span> LISTADO DE INVENTARIO</span>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Referencia</th>
+                                <th>Descripcion</th>
+                                <th >Precio Unidad</th>
+                                <th >Precio Venta</th>
+                                <th >Categoria</th>
+                                <th >Stock</th>
+                                <th >Existencia</th>
+                              
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="p in productos| filter:filter " >
+                                <td>{{ p.id}}</td>
+                                <td>{{ p.descripcion}}</td>
+                                <td>{{ p.precio_unidad}}</td>
+                                <td>{{ p.precio_venta}}</td>
+                                <td>{{ p.categoria_nombre}}</td>
+                                <td>{{ p.stock_total}}</td>
+                                <td>{{ p.existencia}}</td>
+                              
+                            </tr>
+                        </tbody>
+                    </table>
+              
+            </div>
+            <div id="editor"> </div>
+            
+            
+            
+        </div>
+
+        <div style="border:white;"  class="portlet box purple">
+            <div style="background: #747F8C;" class="portlet-title">
+                <div style="color:black;" class="caption">
+                    <i class="fa fa-cogs"></i> Listado Inventario </div>
+                <div class="tools">
+                    <a style="" href="javascript:;" class="collapse"> </a>
+                    <a href="javascript:;" class="reload"> </a>
+
+                </div>
+            </div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover dt-responsive" width="100%" id="sample_1">
+                        <thead>
+                            <tr>
+                                <th class="desktop">Referencia</th>
+                                <th class="desktop">Descripcion</th>
+                                <th class="min-phone-l">Precio Unidad</th>
+                                <th class="min-tablet">Precio Venta</th>
+                                <th class="none">Categoria</th>
+                                <th class="none">Stock</th>
+                                <th class="none">Existencia</th>
+                                <th class="none"><button type="" class="btn btn-circle"  ng-click="imprimir()"> <i class="fa fa-copy"  ></i></button> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="p in productos| filter:filter " >
+                                <td>{{ p.id}}</td>
+                                <td>{{ p.descripcion}}</td>
+                                <td>{{ p.precio_unidad}}</td>
+                                <td>{{ p.precio_venta}}</td>
+                                <td>{{ p.categoria_nombre}}</td>
+                                <td>{{ p.stock_total}}</td>
+                                <td>{{ p.existencia}}</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

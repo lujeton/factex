@@ -19,17 +19,26 @@ namespace LujetonA.logicBuiness
         }
 
         public static Models.usuario ValidateToken(string token, long seconds) {
-            token = descifrar(token);            
-            var id = int.Parse(token.Split(';')[0]);
-            var time = new DateTime(long.Parse(token.Split(';')[1]));
-            if ((time - DateTime.UtcNow).TotalSeconds > seconds) {
-                return null;
-            }
-            else
+            try
             {
-                var store_user = new Models.bd_proyectoEntities1().usuario.Where(x => x.idusuario == id).FirstOrDefault();
-                return store_user;
+                token = descifrar(token);
+                var id = int.Parse(token.Split(';')[0]);
+                var time = new DateTime(long.Parse(token.Split(';')[1]));
+                if ((time - DateTime.UtcNow).TotalSeconds > seconds)
+                {
+                    return null;
+                }
+                else
+                {
+                    var store_user = new Models.bd_proyectoEntities1().usuario.Where(x => x.idusuario == id).FirstOrDefault();
+                    return store_user;
+                }
             }
+            catch
+            {
+                return null;                
+            }
+            
         }
 
 

@@ -4,6 +4,7 @@
     /////////////////////////////////////////////////////////
     $scope.evt_iniciar_sesion = function () {
         usuarioPvr.login($scope.usuario);
+       
     };
 
 });

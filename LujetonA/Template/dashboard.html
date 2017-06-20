@@ -1,0 +1,179 @@
+<!-- BEGIN PAGE HEADER-->
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="#/dashboard.html">Home</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <a href="#">Dashboard</a>
+        </li>
+    </ul>
+    <div class="page-toolbar">
+        <div class="btn-group pull-right">
+         
+        </div>
+    </div>
+</div>
+<h3 class="page-title"> Bienvenido </h3>
+<!-- END PAGE HEADER-->
+<!-- BEGIN MAIN CONTENT -->
+<div ng-controller="DashboardController">
+    
+    <h3> <i class="fa fa-fire"></i> Accesos Directo </h3>
+    <!-- BEGIN DASHBOARD STATS -->
+    <div class="row">
+        <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-stat white">
+                <div class="visual">
+                    <i class="fa fa-comments"></i>
+                </div>
+                <div class="details">
+                    <div class="number"> 1234 </div>
+                    <div style="color: #3FD5C0;" class="desc"> Articulos </div>
+                </div>
+                <a style="background: black;color:#3FD5C0;" class="more" href="#"> Ir
+                    <i class="m-icon-swapright m-icon-white"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-stat green">
+                <div class="visual">
+                    <i class="fa fa-bar-chart-o"></i>
+                </div>
+                <div class="details">
+                    <div class="number"> 321 </div>
+                    <div class="desc"> Movimientos </div>
+                </div>
+                <a style="background: black;" class="more" href="#"> Ir
+                    <i class="m-icon-swapright m-icon-white"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-stat white">
+                <div  class="visual">
+                    <i  class="fa fa-shopping-cart"></i>
+                </div>
+                <div  class="details">
+                    <div class="number"> 12,5M$ </div>
+                    <div style="color: #3FD5C0;" class="desc"> Facturación </div>
+                </div>
+                 <a style="background: black; color:#3FD5C0;" class="more" href="#" > Ir
+                    <i class="m-icon-swapright m-icon-white"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-stat green">
+                <div class="visual">
+                    <i class="fa fa-globe"></i>
+                </div>
+                <div class="details">
+                    <div class="number"> 250 </div>
+                    <div class="desc"> Clientes </div>
+                </div>
+                <a style="background: black;" class="more" href="#"> Ir
+                    <i class="m-icon-swapright m-icon-white"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- END DASHBOARD STATS -->
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <!-- BEGIN PORTLET-->
+          <div class="clearfix">
+                         <div class="panel panel-group">
+                      <!-- Default panel contents -->
+                                            <div class="panel-heading">
+                                                <h3 class="panel-title">Resumen Diario</h3>
+                                            </div>
+                                           
+                                            <!-- List group -->
+                                            <ul class="list-group">
+                                                <li class="list-group-item"> Nro. Facturas Realizadas hoy
+                                                    <span class="badge badge-danger"> 3 </span>
+                                                </li>
+                                                <li class="list-group-item"> Nro. Entradas Realizadas hoy
+                                                    <span class="badge badge-danger"> 11 </span>
+                                                </li>
+                                                <li class="list-group-item"> Nro. Proovedores Registrados hoy
+                                                    <span class="badge badge-danger"> 14 </span>
+                                                </li>
+                                               <li class="list-group-item"> Nro. Clientes Registrados hoy
+                                                    <span class="badge badge-danger"> 14 </span>
+                                                </li> 
+                                               
+                                            </ul>
+                                        </div>
+                                    </div>
+            <!-- END PORTLET-->
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="tab-pane active" id="overview_1">
+              <div class="panel-heading">
+              <h3 class="panel-title"> Stock Bajo</h3>
+              </div>
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped table-hover table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th> Producto </th>
+                                                                <th> Precio </th>
+                                                                <th> Cantidad </th>
+                                                               
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="javascript:;"> Cemento </a>
+                                                                </td>
+                                                                <td> $625.50 </td>
+                                                                <td style=" background: #ED6B75;"> 3 </td>
+                                                              
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="javascript:;"> Pegantes  </a>
+                                                                </td>
+                                                                <td> $915.50 </td>
+                                                                <td style=" background: #ED6B75;"> 4 </td>
+                                                              
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="javascript:;"> Tubo PVC </a>
+                                                                </td>
+                                                                <td> $878.50 </td>
+                                                                <td style=" background: #ED6B75;"> 9 </td>
+                                                               
+                                                            </tr>
+                                                            
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="javascript:;"> Tornillos </a>
+                                                                </td>
+                                                                <td> $878.50 </td>
+                                                                <td style=" background: #ED6B75;"> 10 </td>
+                                                            
+                                                            </tr>
+                                                       
+                                                         
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+        </div>
+    </div>
+   
+            <!-- END REGIONAL STATS PORTLET-->
+        </div>
+<!-- END MAIN CONTENT -->
+<!-- BEGIN MAIN JS & CSS -->
+<script>
+    Dashboard.init();
+</script>
+<!-- BEGIN MAIN JS & CSS -->

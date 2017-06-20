@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="portlet light bordered">
+            <div class="portlet-title" style="border-color: #B86B95;">
+                <div class="caption" >
+                    <i class="icon-share font-dark"></i>
+                    <span  class="caption-subject font-dark bold uppercase">Creando Factura</span>
+                </div>
+
+            </div>
+            <div>
+
+                <hr>
+                <h4>Ferreteria Lujeton</h4>
+                <br>
+                <form class="form-inline" role="form" style="border-color: #900C3F;">
+                    <div class="form-group">
+                        <label class="sr-only" >N.°</label>
+                        <div class="input-icon">
+                            <i class="fa fa-calculator"></i>
+                            <input type="text" class="form-control" id="exampleInputEmail22" placeholder="N.°" disabled> </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputPassword42">ID CLIENTE</label>
+                        <div class="input-icon">
+                            <i class="fa fa-user"></i>
+                            <input  ng-model="selectedCliente.idcliente"type="text" class="form-control" id="exampleInputPassword42" placeholder="ID Cliente" disabled="">
+                            <button type="" class="btn btn-danger" ng-click="nuevocli()"> <i class="fa fa-plus"></i></button> 
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputPassword42">ID Vendedor</label>
+                        <div class="input-icon">
+                            <i class="fa fa-spinner"></i>
+                            <input ng-model="selectedEmpleado.id_empleado"type="text" class="form-control" id="exampleInputPassword42" placeholder="ID Vendedor" disabled="">
+                            <button  type="" class="btn btn-danger"> <i class="fa fa-plus" ng-click="nuevoempl()"></i></button>    
+                        </div>
+
+                    </div>
+
+                    <br>
+
+
+                    <div style="margin-top: 10px;" class="form-group">
+                        <label class="sr-only" for="exampleInputPassword42">Fecha</label>
+                        <div class="input-icon">
+                            <i class="fa fa-calendar-check-o"></i>
+                            <input type="text" class="form-control" value="{{ fecha }}" id="exampleInputPassword42" placeholder="Fecha" disabled="">
+
+                        </div>
+
+                    </div>
+
+                    <div style="margin-top: 10px;"  class="form-group">
+                        <label class="sr-only" for="exampleInputPassword42">Nombre Cliente</label>
+                        <div class="input-icon">
+                            <i class="fa fa-user"></i>
+                            <input  value="{{ selectedCliente.nombre + ' ' + selectedCliente.apellido  }}" type="text" class="form-control" id="exampleInputPassword42" placeholder="Nombre Cliente" disabled="">
+
+                        </div>
+
+                    </div>
+
+                    <div style="margin-top: 10px; margin-left: 42px;"  class="form-group">
+                        <label class="sr-only" for="exampleInputPassword42">Nombre Vendedor</label>
+                        <div class="input-icon">
+                            <i class="fa fa-spinner"></i>
+                            <input value="{{ selectedEmpleado.nombre + ' ' + selectedEmpleado.apellido }}" type="text" class="form-control" id="exampleInputPassword42" placeholder="Nombre Vendedor" disabled="">
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+
+
+            <br>
+            <br>
+
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="portlet grey-cascade box">
+                        <div class="portlet-title">
+                            <div class="caption">
+                                <i class="fa fa-cogs"></i> Carro De Compras </div>
+                            <div class="actions">
+                                <a href="javascript:;" class="btn btn-default btn-sm">
+                                    <i class="fa fa-pencil"></i> Edit </a>
+                            </div>
+                        </div>
+                        <div class="portlet-body"style="border-color: #900C3F;">
+                            <div class="table-responsive">
+                                <table class="table table-hover table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th> Referencia </th>
+                                            <th>  Nombre </th>
+                                            <th> Cantidad  </th>
+                                            <th> Valor </th>
+                                            <th> Descuento </th>
+                                            <th> Total </th>
+                                            <th> <button class="btn btn-danger" type="button" ng-click="nuevopro()" > <i class="fa fa-plus"  ></i> </button> </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>                                        
+                                        <tr ng-repeat="af in articulos_factura" >
+                                            <td>
+                                                <a href="javascript:;"> {{ af.idProducto }} </a>
+                                            </td>
+                                            <td>
+                                                <span class="label label-sm label-success"> {{ af.descripcion }} 
+                                            </td>
+                                            <td> {{ af.cantidad }} </td>
+                                            <td> {{ af.precio_venta }} </td>
+                                            <td> $<input ng-model="af.descuento" style="border-width: 0px;background: transparent;"  type="text" class="form-control-inline" > </td>
+                                            <td> {{ (af.cantidad * af.precio_venta) - af.descuento }} </td>
+                                            <td> <button class="btn btn-icon-only purple" type="button"  > <i class="fa fa-times"  ></i> </button> </td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+
+            <br>
+            <div class="row">
+                <div class="col-md-6"> </div>
+                <div class="col-md-6">
+                    <div class="well">
+                        <div class="row static-info align-reverse">
+                            <div class="col-md-8 name"> Sub Total: </div>
+                            <div class="col-md-3 value"> {{ subTotal }} </div>
+                        </div>
+                        <div class="row static-info align-reverse">
+                            <div class="col-md-8 name"> Descuento: </div>
+                            <div class="col-md-3 value">  {{Descuento}} </div>
+                        </div>
+
+                        <div class="row static-info align-reverse">
+                            <div class="col-md-8 name"> Total : </div>
+                            <div class="col-md-3 value"> {{Total}} </div>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div  style="margin-left: 240px;" class="row static-info align-reverse">
+                            <button type="button" ng-click="save_data()" class="btn btn-danger mt-ladda-btn ladda-button" data-style="zoom-out">
+                                <span class="ladda-label"> Guardar</span>
+                            </button>
+                            <button id="butt" ng-click="changecolor(this)"  type="button" class="btn btn-danger mt-ladda-btn ladda-button" style="border-color: transparent;" >
+                                <span id="spn" class="ladda-label">Pasar a Cartera</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            
+            
+
+            <div id="static" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click=""></button>
+                            <h4 class="modal-title" style="color:black;"> <strong> Empleados </strong></h4>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div  class="form-group" >
+                                        <label class="control-label col-md-3">Empleado
+                                            <span class="required"> * </span>
+                                        </label>
+                                        <div class="col-md-7"> 
+                                            <select  class="bs-select form-control" ng-model="selectedEmpleado" data-live-search="true" data-size="8">
+                                                <option ng-repeat="e in empleados" value="{{ e }}">{{ e.nombre}}</option> 
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-dismiss="modal" class="btn dark btn-outline">Cancelar</button>
+                            <button type="button" data-dismiss="modal"  class="btn red" ng-click="addEmpleado()" >Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="stati" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                            <h4 class="modal-title" style="color:black;"> <strong> Clientes </strong></h4>
+                        </div>
+                        <div class="modal-body">
+                           <div class="row">
+                                <div class="col-md-12" >
+                                    <div  class="form-group" >
+                                        <label class="control-label col-md-3">Cliente
+                                            <span class="required">  </span>
+                                        </label>
+                                        <div class="col-md-8" > 
+                                              
+                                            <angucomplete 
+                                                ng-model="cliente_agregar" 
+                                                id="ex2" 
+                                                placeholder="" 
+                                                pause="300"  
+                                                localdata="clientes" 
+                                                selectedobject="selectedCliente" 
+                                                searchfields="idcliente" 
+                                                titlefield="idcliente" 
+                                                descriptionfield="tipo" 
+                                                minlength="1"                                               
+                                                input-class="form-control-buscar" 
+                                                matchclass="highlight" />
+                                        </div>
+                                    </div> 
+
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-dismiss="modal" class="btn dark btn-outline">Cancelar</button>
+                            <button type="button" data-dismiss="modal" class="btn red" ng-click="addCliente()">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="statik" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                            <h4 class="modal-title" style="color:black;"> <strong> Productos </strong></h4>
+                        </div>
+                        <div class="modal-body">                                                        
+
+                            <div class="row">
+                                <div class="col-md-12" >
+                                    <div  class="form-group" >
+                                        <label class="control-label col-md-3">Producto
+                                            <span class="required">  </span>
+                                        </label>
+                                        <div class="col-md-8" > 
+                                              
+                                            <angucomplete 
+                                                ng-model="articulo_agregar" 
+                                                id="ex2" 
+                                                placeholder="" 
+                                                pause="300"  
+                                                localdata="productos" 
+                                                selectedobject="selectedArticulo" 
+                                                searchfields="descripcion" 
+                                                titlefield="descripcion" 
+                                                descriptionfield="tipo" 
+                                                minlength="1"                                               
+                                                input-class="form-control-buscar" 
+                                                matchclass="highlight" />
+                                        </div>
+                                    </div> 
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div  class="form-group" >
+                                        <label style="margin-top: 19px;" class="control-label col-md-3">Cantidad
+                                            <span class="required">  </span>
+                                        </label>
+                                        <div style="margin-left: 37px;margin-top: 15px;" class="col-md-6"> <input type="text"  ng-model="articulo_cantidad;" name="name" data-required="1" class="form-control-focus"  /> 
+                                        </div>
+                                    </div> 
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-dismiss="modal" class="btn dark btn-outline">Cancelar</button>
+                            <button type="button" data-dismiss="modal" ng-click="addProduct()" class="btn red">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>                           
+    </body>
+</html>

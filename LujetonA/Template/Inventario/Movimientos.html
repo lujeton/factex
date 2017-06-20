@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h3 class="page-title" > Movimientos </h3>
+        <br>
+        
+
+        
+
+        <div class="form-group">
+
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text"   class="form-control" 
+                           placeholder="Ej:Entrada,Salida...etc"  ng-model="filter">
+                    <span class="input-group-addon">
+                        <i class="fa fa-search"></i>
+                    </span>
+                    <span class="input-group-btn">
+                        <button class="btn green" type="button" ng-click="nuevo()" > <i class="fa fa-plus"  ></i> </button>
+
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+        <a style="float: right;" href="javascript:;" class="btn btn-lg default m-icon-big" ng-click="translado()"> TRANSLADOS
+            <i class="m-icon-big-swapleft"></i>
+        </a>
+
+        <div style="border:white;"  class="portlet box purple">
+            <div style="background: #747F8C;" class="portlet-title">
+                <div style="color:black;" class="caption">
+                    <i class="fa fa-cogs"></i> Lista De Movimientos </div>
+                <div class="tools">
+
+
+
+                </div>
+            </div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover dt-responsive" width="100%" id="sample_1">
+                        <thead>
+                            <tr>
+                                <th class="desktop">Fecha</th>
+                                <th class="desktop">Producto</th>
+                                <th class="min-phone-l">Cantidad</th>
+                                <th class="min-tablet">Bodega</th>
+                                <th class="min-tablet">Valor</th>
+                                <th class="none">Tipo De Movimiento</th>
+                                <th class="none">Proveedor</th>
+                                <th class="none">Opciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="m in movimientos| filter:filter " >
+                                <td>{{ m.fecha | date:'yyyy-MM-dd' }}</td>
+                                <td>{{ m.producto_nombre}}</td>
+                                <td>{{ m.cantidad}}</td>
+                                <td>{{ m.bodega_nombre}}</td>
+                                <td>{{ m.valor}}</td>
+                                <td>{{ m.tmovimiento_nombre}}</td>
+                                <td>{{ m.proveedor_descripcion}}</td>
+
+                                <td> 
+                                    <a href="javascript:;" class="btn btn-circle btn-sm red"> Actualizar <i class="fa fa-edit"> </i></a> 
+                                    <a href="javascript:;" class="btn btn-circle btn-sm purple" ng-click="delete(m.id)" > <i class="fa fa-times"></i> Eliminar </a> 
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="static" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                            <h4 class="modal-title" style="color:black;"> <strong> Movimientos </strong></h4>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <div class="row">
+                                <div class="col-md-12">
+
+
+
+                                    <div  class="form-group" >
+                                        <label class="control-label col-md-3">Fecha
+                                        </label>
+                                        <div class="col-md-7"> <input type="text" ng-model="new_movimiento.fecha" name="name" data-required="1" class="form-control" /> 
+                                        </div>
+                                    </div>
+
+                                    <div  class="form-group" >
+                                        <label class="control-label col-md-3">Productos
+
+                                        </label>
+                                        <div class="col-md-7"> 
+                                            <select class="bs-select form-control" ng-model="new_movimiento.idProducto" data-live-search="true" data-size="8">
+                                                <option ng-repeat="p in productos" value="{{ p.id}}">{{ p.descripcion}}</option> 
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div  class="form-group" >
+                                        <label class="control-label col-md-3">Cantidad
+
+                                        </label>
+                                        <div class="col-md-7"> <input type="text" ng-model="new_movimiento.cantidad" name="name" data-required="1" class="form-control" /> 
+                                        </div>
+                                    </div>
+
+                                    <div  class="form-group" >
+                                        <label class="control-label col-md-3">Bodega
+
+                                        </label>
+                                        <div class="col-md-7"> 
+                                            <select class="bs-select form-control" ng-model="new_movimiento.idBodega" data-live-search="true" data-size="8">
+                                                <option ng-repeat="b in bodegas" value="{{ b.id}}">{{ b.nombre}}</option> 
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div  class="form-group" >
+                                        <label class="control-label col-md-3">Valor
+                                            <span class="required">  </span>
+                                        </label>
+                                        <div class="col-md-7"> <input ng-model="new_movimiento.valor" type="text" name="name" data-required="1" class="form-control" /> 
+                                        </div>
+                                    </div> 
+
+                                    <div  class="form-group" >
+                                        <label class="control-label col-md-3">Tipo Movimiento
+
+                                        </label>
+                                        <div class="col-md-7"> 
+                                            <select class="bs-select form-control" ng-model="new_movimiento.idTMovimiento" data-live-search="true" data-size="8">
+                                                <option ng-repeat="tm in tipomovimiento" value="{{ tm.idTMovimiento}}">{{ tm.descripcion}}</option> 
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-dismiss="modal" class="btn dark btn-outline">Cancelar</button>
+                            <button type="button" data-dismiss="modal" ng-click="save()" class="btn red">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="stati" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                            <h4 class="modal-title" style="color:black;"> <strong> Traslado </strong></h4>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div  class="form-group" >
+                                        <label class="control-label col-md-3">Bodega Salida
+
+                                        </label>
+                                        <div class="col-md-7"> 
+                                            <select class="bs-select form-control" ng-model="new_traslado.idBodegaSalida" data-live-search="true" data-size="8">
+                                                <option ng-repeat="b in bodegas" ng-disabled="b.id == new_traslado.idBodegaDestino" value="{{ b.id}}">{{ b.nombre}}</option> 
+                                            </select>
+                                        </div>
+                                    </div>                                                                                                            
+
+                                    <div  class="form-group" >
+                                        <label class="control-label col-md-3">Producto
+
+                                        </label>
+                                        <div class="col-md-7"> 
+                                            <select class="bs-select form-control" ng-model="new_traslado.idProducto" data-live-search="true" data-size="8">
+                                                <option ng-repeat="p in productos" value="{{ p.id}}">{{ p.descripcion}}</option> 
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div  class="form-group" >
+                                        <label class="control-label col-md-3">Cantidad
+
+                                        </label>
+                                        <div class="col-md-7"> <input type="text" ng-model="new_traslado.cantidad" name="name" data-required="1" class="form-control" /> 
+                                        </div>
+                                    </div>
+
+                                    <div  class="form-group" >
+                                        <label class="control-label col-md-3">Bodega Entrada
+
+                                        </label>
+                                        <div class="col-md-7"> 
+                                            <select class="bs-select form-control" ng-model="new_traslado.idBodegaDestino" data-live-search="true" data-size="8">
+                                                <option ng-repeat="k in bodegas2" ng-disabled="k.id == new_traslado.idBodegaSalida" value="{{ k.id}}">{{ k.nombre}}</option> 
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-dismiss="modal" class="btn dark btn-outline">Cancelar</button>
+                            <button type="button" data-dismiss="modal" ng-click="save_traslado()" class="btn red">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

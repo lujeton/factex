@@ -7,5 +7,5 @@
     $scope.evt_menu = function () {
 
     };
-
+    
 });
