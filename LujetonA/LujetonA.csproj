@@ -1625,7 +1625,6 @@
     <Content Include="Assets\pages\scripts\ui-tree.min.js" />
     <Content Include="Assets\pages\scripts\widgets.js" />
     <Content Include="Assets\pages\scripts\widgets.min.js" />
-    <Content Include="Views\Dashboard\favicon.ico" />
     <Content Include="js\controllers\DashboardController.js" />
     <Content Include="js\controllers\facturacion\ctrl_cartera.js" />
     <Content Include="js\controllers\facturacion\ctrl_facturacion.js" />
@@ -1689,7 +1688,7 @@
     <Content Include="Template\ui_bootstrap.html" />
     <Content Include="Template\ui_select.html" />
     <Content Include="Template\venta.html" />
-    <Content Include="Views\Home\favicon.ico" />
+    <Content Include="Views\Shared\favicon.ico" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
