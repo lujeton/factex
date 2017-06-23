@@ -37,6 +37,16 @@ namespace LujetonA.Controllers
             return Ok(factura);
         }
 
+
+        public decimal GetTotal(DateTime f1, DateTime f2) {
+            var total = db.factura.Where(factura => 
+                factura.fecha.Value > f1 && 
+                factura.fecha.Value < f2)
+                .Sum(x => x.total);
+
+            return Convert.ToDecimal(total);
+        }
+
         // PUT: api/facturas/5
         [ResponseType(typeof(void))]
         public IHttpActionResult Putfactura(int id, factura factura)
