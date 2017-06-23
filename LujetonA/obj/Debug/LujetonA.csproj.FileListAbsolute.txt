@@ -122,3 +122,45 @@ E:\Repositorios\factex\LujetonA\bin\MySql.Data.xml
 E:\Repositorios\factex\LujetonA\obj\Debug\LujetonA.csprojResolveAssemblyReference.cache
 E:\Repositorios\factex\LujetonA\obj\Debug\LujetonA.dll
 E:\Repositorios\factex\LujetonA\obj\Debug\LujetonA.pdb
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\LujetonA.dll.config
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\LujetonA.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\LujetonA.pdb
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\Antlr3.Runtime.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\EntityFramework.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\EntityFramework.SqlServer.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\MySql.Data.Entity.EF6.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\Newtonsoft.Json.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Net.Http.Formatting.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.Cors.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.Helpers.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.Http.Cors.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.Http.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.Http.WebHost.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.Mvc.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.Optimization.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.Razor.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.WebPages.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.WebPages.Razor.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\WebGrease.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\MySql.Data.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\Antlr3.Runtime.pdb
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\EntityFramework.xml
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\EntityFramework.SqlServer.xml
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\Newtonsoft.Json.xml
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.Http.Cors.xml
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Net.Http.Formatting.xml
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.Helpers.xml
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.Http.xml
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.Http.WebHost.xml
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.Mvc.xml
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.Optimization.xml
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.Razor.xml
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.WebPages.xml
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\System.Web.WebPages.Razor.xml
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\bin\MySql.Data.xml
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\obj\Debug\LujetonA.csprojResolveAssemblyReference.cache
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\obj\Debug\LujetonA.dll
+C:\Users\Jose Fragozo\Documents\GitHub\factex\LujetonA\obj\Debug\LujetonA.pdb

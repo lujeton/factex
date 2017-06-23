@@ -157,6 +157,7 @@
     <Compile Include="Controllers\facturasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\movimientoesController.cs" />
+    <Compile Include="Controllers\MVC\DashboardController.cs" />
     <Compile Include="Controllers\productoesController.cs" />
     <Compile Include="Controllers\proveedorsController.cs" />
     <Compile Include="Controllers\tipomovimientoesController.cs" />
@@ -1624,7 +1625,7 @@
     <Content Include="Assets\pages\scripts\ui-tree.min.js" />
     <Content Include="Assets\pages\scripts\widgets.js" />
     <Content Include="Assets\pages\scripts\widgets.min.js" />
-    <Content Include="Views\Home\favicon.ico" />
+    <Content Include="Views\Dashboard\favicon.ico" />
     <Content Include="js\controllers\DashboardController.js" />
     <Content Include="js\controllers\facturacion\ctrl_cartera.js" />
     <Content Include="js\controllers\facturacion\ctrl_facturacion.js" />
@@ -1651,7 +1652,6 @@
     <Content Include="js\lib\jspdf.min.js" />
     <Content Include="js\main.js" />
     <Content Include="js\scripts\table-ajax.js" />
-    <Content Include="Views\Home\login.html" />
     <Content Include="tpl\footer.html" />
     <Content Include="tpl\header.html" />
     <Content Include="tpl\quick-sidebar.html" />
@@ -1689,6 +1689,7 @@
     <Content Include="Template\ui_bootstrap.html" />
     <Content Include="Template\ui_select.html" />
     <Content Include="Template\venta.html" />
+    <Content Include="Views\Home\favicon.ico" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1703,7 +1704,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Dashboard.cshtml" />
     <Content Include="Assets\global\img\social\Thumbs.db" />
     <Content Include="Assets\global\plugins\angularjs\angular-cookies.min.js.map" />
     <Content Include="Assets\global\plugins\angularjs\angular-sanitize.min.js.map" />
@@ -1760,6 +1760,7 @@
     <Content Include="Assets\global\plugins\simple-line-icons\fonts\Simple-Line-Icons.woff" />
     <Content Include="Assets\pages\media\blog\Thumbs.db" />
     <Content Include="Assets\pages\media\pages\Thumbs.db" />
+    <Content Include="Views\Dashboard\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
