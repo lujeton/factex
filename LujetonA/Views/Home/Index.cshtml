@@ -1,25 +1,33 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title></title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="~/Content/login.css">    
+</head>
+<body>
+    <div class="login">
+        <div class="login-screen">
+            <div class="app-title">
+                <h1>Login</h1>
+            </div>
+            <div class="login-form">
+                <div class="control-group">
+                    <input type="text" ng-model="usuario.user" class="login-field" value="" placeholder="username" id="login-name">
+                    <label class="login-field-icon fui-user" for="login-name"></label>
+                </div>
+                <div class="control-group">
+                    <input type="password" ng-model="usuario.pass" class="login-field" value="" placeholder="password" id="login-pass">
+                    <label class="login-field-icon fui-lock" for="login-pass"></label>
+                </div>
+                <a class="btn btn-primary btn-large btn-block" href="#">login</a>                
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
-    <script src="app_lujeton/init.js"></script>
-    <script src="app_lujeton/provider/usuario_provider.js"></script>
-    <script src="app_lujeton/controller/login_ctrl.js"></script>
-</head>
-<body ng-app="lujeton_app" ng-controller="login_ctrl">
-
-    <label for="user">nombre</label>
-    <br>
-    <input id="nombre" ng-model="usuario.user" type="text" name="user">
-    <br>
-    <label for="pass">password</label>
-    <br>
-    <input id="pass" ng-model="usuario.pass" type="password" name="pass">
-    <br>
-    <button class="" ng-click="evt_iniciar_sesion()">Sign in</button>
+    <script src="~/Scripts/app/init.js"></script>
+    <script src="~/Scripts/app/provider/usuario_provider.js"></script>
+    <script src="~/Scripts/app/controller/login_ctrl.js"></script>
 </body>
 </html>
